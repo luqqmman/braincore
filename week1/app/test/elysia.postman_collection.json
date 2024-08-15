@@ -1,0 +1,183 @@
+{
+    "info": {
+      "name": "Elysia.js Unit Tests",
+      "_postman_id": "12345-67890-abcdef",
+      "description": "Unit tests for Elysia.js application",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Hello World",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": [""]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create User",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/user",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["user"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get All Users",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/users",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["users"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get User by ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/user/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["user", "1"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Update User by ID",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/user/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["user", "1"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Delete User by ID",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/user/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["user", "1"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Sign In",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/sign",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["sign"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Profile",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "Bearer <JWT_TOKEN>"
+            }
+          ],
+          "url": {
+            "raw": "http://localhost:3000/profile",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["profile"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Profile by ID",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "Bearer <JWT_TOKEN>"
+            }
+          ],
+          "url": {
+            "raw": "http://localhost:3000/profile/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["profile", "1"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
